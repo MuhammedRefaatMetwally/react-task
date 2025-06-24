@@ -143,10 +143,11 @@
   .newsletter-container-style {
     @apply border border-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 bg-[#292A32];
   }
-  .email-input-style {
-    @apply w-full px-6 py-4 sm:py-5 bg-transparent border border-gray-500 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:border-[#B6F09C] text-base sm:text-lg transition-colors;
-  }
-  .subscribe-button-style {
-    @apply bg-[#B6F09C] text-black hover:bg-[#9CE184] transition-colors rounded-2xl px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-medium whitespace-nowrap;
-  }
+ .email-input-style {
+  @apply w-full max-w-md px-8 py-4 sm:px-10 sm:py-5 bg-transparent border border-gray-500 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:border-[#B6F09C] text-base sm:text-lg transition-colors;
+}
+
+.subscribe-button-style {
+  @apply w-full max-w-md bg-[#B6F09C] text-black hover:bg-[#9CE184] transition-colors rounded-2xl px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-medium whitespace-nowrap;
+}
 }
