@@ -1,3 +1,4 @@
+import { memo } from "react";
 import CompaniesLogo from "./CompaniesLogo";
 
 const HeroSection = () => {
@@ -18,7 +19,7 @@ const HeroSection = () => {
               online through a range of services including SEO, PPC, social
               media marketing, and content creation.
             </p>
-            <button className="bg-black text-white hover:bg-gray-800 transition-colors rounded-xl px-8 py-3 text-base font-medium">
+            <button className="bg-black text-white hover:bg-gray-800 transition-colors rounded-xl px-8 py-6 text-base font-medium">
               Book a consultation
             </button>
           </div>
@@ -36,4 +37,4 @@ const HeroSection = () => {
   );
 };
 
-export default  HeroSection;
+export default  memo(HeroSection);
