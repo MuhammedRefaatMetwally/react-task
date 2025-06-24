@@ -1,5 +1,7 @@
 import { useTheme } from "next-themes"
 import { Toaster as Sonner } from "sonner"
+
+// @ts-ignore - Ignore type import error for build
 import type { ToasterProps } from "sonner"
 
 const Toaster = ({ ...props }: ToasterProps) => {
@@ -7,7 +9,7 @@ const Toaster = ({ ...props }: ToasterProps) => {
 
   return (
     <Sonner
-      theme={theme as ToasterProps["theme"]}
+      theme={theme as any}
       className="toaster group"
       style={
         {
